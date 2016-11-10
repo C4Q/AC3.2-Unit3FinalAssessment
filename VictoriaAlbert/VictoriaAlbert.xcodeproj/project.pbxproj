@@ -1,0 +1,362 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF10792E1DD4D44F0087E54D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF10792D1DD4D44F0087E54D /* AppDelegate.swift */; };
+		DF1079331DD4D44F0087E54D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF1079311DD4D44F0087E54D /* Main.storyboard */; };
+		DF1079351DD4D44F0087E54D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF1079341DD4D44F0087E54D /* Assets.xcassets */; };
+		DF1079381DD4D44F0087E54D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF1079361DD4D44F0087E54D /* LaunchScreen.storyboard */; };
+		DF1079471DD4D5930087E54D /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1079461DD4D5930087E54D /* APIRequestManager.swift */; };
+		DF1079491DD4D5E40087E54D /* VictoriaAndAlbertMuseumTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1079481DD4D5E40087E54D /* VictoriaAndAlbertMuseumTableViewController.swift */; };
+		DF10794B1DD4D62E0087E54D /* Museum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF10794A1DD4D62E0087E54D /* Museum.swift */; };
+		DF10794D1DD4E1170087E54D /* ElementsInsideMuseum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF10794C1DD4E1170087E54D /* ElementsInsideMuseum.swift */; };
+		DF1079511DD509C80087E54D /* MuseumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1079501DD509C80087E54D /* MuseumTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DF10792A1DD4D44F0087E54D /* VictoriaAlbert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VictoriaAlbert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF10792D1DD4D44F0087E54D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DF1079321DD4D44F0087E54D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF1079341DD4D44F0087E54D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF1079371DD4D44F0087E54D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF1079391DD4D44F0087E54D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF1079461DD4D5930087E54D /* APIRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIRequestManager.swift; path = ../APIRequestManager.swift; sourceTree = "<group>"; };
+		DF1079481DD4D5E40087E54D /* VictoriaAndAlbertMuseumTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VictoriaAndAlbertMuseumTableViewController.swift; sourceTree = "<group>"; };
+		DF10794A1DD4D62E0087E54D /* Museum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Museum.swift; sourceTree = "<group>"; };
+		DF10794C1DD4E1170087E54D /* ElementsInsideMuseum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementsInsideMuseum.swift; sourceTree = "<group>"; };
+		DF1079501DD509C80087E54D /* MuseumTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuseumTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF1079271DD4D44F0087E54D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF1079211DD4D44F0087E54D = {
+			isa = PBXGroup;
+			children = (
+				DF10792C1DD4D44F0087E54D /* VictoriaAlbert */,
+				DF10792B1DD4D44F0087E54D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF10792B1DD4D44F0087E54D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF10792A1DD4D44F0087E54D /* VictoriaAlbert.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF10792C1DD4D44F0087E54D /* VictoriaAlbert */ = {
+			isa = PBXGroup;
+			children = (
+				DF1079411DD4D46E0087E54D /* APIRequestManager */,
+				DF1079401DD4D4600087E54D /* ViewControllers */,
+				DF1079431DD4D4840087E54D /* Models */,
+				DF10793F1DD4D4580087E54D /* UI */,
+				DF1079421DD4D47A0087E54D /* Supporting Files */,
+			);
+			path = VictoriaAlbert;
+			sourceTree = "<group>";
+		};
+		DF10793F1DD4D4580087E54D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DF1079311DD4D44F0087E54D /* Main.storyboard */,
+				DF1079361DD4D44F0087E54D /* LaunchScreen.storyboard */,
+				DF1079341DD4D44F0087E54D /* Assets.xcassets */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		DF1079401DD4D4600087E54D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DF1079481DD4D5E40087E54D /* VictoriaAndAlbertMuseumTableViewController.swift */,
+				DF1079501DD509C80087E54D /* MuseumTableViewCell.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DF1079411DD4D46E0087E54D /* APIRequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				DF1079461DD4D5930087E54D /* APIRequestManager.swift */,
+			);
+			name = APIRequestManager;
+			sourceTree = "<group>";
+		};
+		DF1079421DD4D47A0087E54D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF10792D1DD4D44F0087E54D /* AppDelegate.swift */,
+				DF1079391DD4D44F0087E54D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF1079431DD4D4840087E54D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DF10794A1DD4D62E0087E54D /* Museum.swift */,
+				DF10794C1DD4E1170087E54D /* ElementsInsideMuseum.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF1079291DD4D44F0087E54D /* VictoriaAlbert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF10793C1DD4D44F0087E54D /* Build configuration list for PBXNativeTarget "VictoriaAlbert" */;
+			buildPhases = (
+				DF1079261DD4D44F0087E54D /* Sources */,
+				DF1079271DD4D44F0087E54D /* Frameworks */,
+				DF1079281DD4D44F0087E54D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VictoriaAlbert;
+			productName = VictoriaAlbert;
+			productReference = DF10792A1DD4D44F0087E54D /* VictoriaAlbert.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF1079221DD4D44F0087E54D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "John Gabriel Breshears";
+				TargetAttributes = {
+					DF1079291DD4D44F0087E54D = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DF1079251DD4D44F0087E54D /* Build configuration list for PBXProject "VictoriaAlbert" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF1079211DD4D44F0087E54D;
+			productRefGroup = DF10792B1DD4D44F0087E54D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF1079291DD4D44F0087E54D /* VictoriaAlbert */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF1079281DD4D44F0087E54D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF1079381DD4D44F0087E54D /* LaunchScreen.storyboard in Resources */,
+				DF1079351DD4D44F0087E54D /* Assets.xcassets in Resources */,
+				DF1079331DD4D44F0087E54D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF1079261DD4D44F0087E54D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF1079471DD4D5930087E54D /* APIRequestManager.swift in Sources */,
+				DF10794D1DD4E1170087E54D /* ElementsInsideMuseum.swift in Sources */,
+				DF10792E1DD4D44F0087E54D /* AppDelegate.swift in Sources */,
+				DF1079511DD509C80087E54D /* MuseumTableViewCell.swift in Sources */,
+				DF1079491DD4D5E40087E54D /* VictoriaAndAlbertMuseumTableViewController.swift in Sources */,
+				DF10794B1DD4D62E0087E54D /* Museum.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DF1079311DD4D44F0087E54D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF1079321DD4D44F0087E54D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF1079361DD4D44F0087E54D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF1079371DD4D44F0087E54D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF10793A1DD4D44F0087E54D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF10793B1DD4D44F0087E54D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF10793D1DD4D44F0087E54D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VictoriaAlbert/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nyc.c4Q.gabrielBreshears.VictoriaAlbert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DF10793E1DD4D44F0087E54D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VictoriaAlbert/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nyc.c4Q.gabrielBreshears.VictoriaAlbert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF1079251DD4D44F0087E54D /* Build configuration list for PBXProject "VictoriaAlbert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF10793A1DD4D44F0087E54D /* Debug */,
+				DF10793B1DD4D44F0087E54D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF10793C1DD4D44F0087E54D /* Build configuration list for PBXNativeTarget "VictoriaAlbert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF10793D1DD4D44F0087E54D /* Debug */,
+				DF10793E1DD4D44F0087E54D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF1079221DD4D44F0087E54D /* Project object */;
+}
