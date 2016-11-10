@@ -1,0 +1,341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B0D508C1DD4D56300BF4C25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D508B1DD4D56300BF4C25 /* AppDelegate.swift */; };
+		9B0D50911DD4D56300BF4C25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B0D508F1DD4D56300BF4C25 /* Main.storyboard */; };
+		9B0D50931DD4D56300BF4C25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B0D50921DD4D56300BF4C25 /* Assets.xcassets */; };
+		9B0D50961DD4D56300BF4C25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B0D50941DD4D56300BF4C25 /* LaunchScreen.storyboard */; };
+		9B0D509E1DD4D5F100BF4C25 /* MuseumObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D509D1DD4D5F100BF4C25 /* MuseumObject.swift */; };
+		9B0D50A01DD4D60F00BF4C25 /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D509F1DD4D60F00BF4C25 /* APIRequestManager.swift */; };
+		9B0D50A21DD4D64200BF4C25 /* MuseumObjectsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D50A11DD4D64200BF4C25 /* MuseumObjectsTableViewController.swift */; };
+		9B0D50A41DD4EBD200BF4C25 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D50A31DD4EBD200BF4C25 /* DetailViewController.swift */; };
+		9B0D50A61DD4EFF900BF4C25 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D50A51DD4EFF900BF4C25 /* SearchViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9B0D50881DD4D56300BF4C25 /* VictoriaAlbert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VictoriaAlbert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B0D508B1DD4D56300BF4C25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9B0D50901DD4D56300BF4C25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B0D50921DD4D56300BF4C25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B0D50951DD4D56300BF4C25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B0D50971DD4D56300BF4C25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B0D509D1DD4D5F100BF4C25 /* MuseumObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuseumObject.swift; sourceTree = "<group>"; };
+		9B0D509F1DD4D60F00BF4C25 /* APIRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestManager.swift; sourceTree = "<group>"; };
+		9B0D50A11DD4D64200BF4C25 /* MuseumObjectsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuseumObjectsTableViewController.swift; sourceTree = "<group>"; };
+		9B0D50A31DD4EBD200BF4C25 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9B0D50A51DD4EFF900BF4C25 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B0D50851DD4D56300BF4C25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B0D507F1DD4D56300BF4C25 = {
+			isa = PBXGroup;
+			children = (
+				9B0D508A1DD4D56300BF4C25 /* VictoriaAlbert */,
+				9B0D50891DD4D56300BF4C25 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9B0D50891DD4D56300BF4C25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B0D50881DD4D56300BF4C25 /* VictoriaAlbert.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B0D508A1DD4D56300BF4C25 /* VictoriaAlbert */ = {
+			isa = PBXGroup;
+			children = (
+				9B0D508B1DD4D56300BF4C25 /* AppDelegate.swift */,
+				9B0D50A81DD4F4B600BF4C25 /* Model */,
+				9B0D50A71DD4F4A400BF4C25 /* ViewControllers */,
+				9B0D508F1DD4D56300BF4C25 /* Main.storyboard */,
+				9B0D50921DD4D56300BF4C25 /* Assets.xcassets */,
+				9B0D50941DD4D56300BF4C25 /* LaunchScreen.storyboard */,
+				9B0D50971DD4D56300BF4C25 /* Info.plist */,
+			);
+			path = VictoriaAlbert;
+			sourceTree = "<group>";
+		};
+		9B0D50A71DD4F4A400BF4C25 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9B0D50A51DD4EFF900BF4C25 /* SearchViewController.swift */,
+				9B0D50A11DD4D64200BF4C25 /* MuseumObjectsTableViewController.swift */,
+				9B0D50A31DD4EBD200BF4C25 /* DetailViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9B0D50A81DD4F4B600BF4C25 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9B0D509F1DD4D60F00BF4C25 /* APIRequestManager.swift */,
+				9B0D509D1DD4D5F100BF4C25 /* MuseumObject.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B0D50871DD4D56300BF4C25 /* VictoriaAlbert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B0D509A1DD4D56300BF4C25 /* Build configuration list for PBXNativeTarget "VictoriaAlbert" */;
+			buildPhases = (
+				9B0D50841DD4D56300BF4C25 /* Sources */,
+				9B0D50851DD4D56300BF4C25 /* Frameworks */,
+				9B0D50861DD4D56300BF4C25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VictoriaAlbert;
+			productName = VictoriaAlbert;
+			productReference = 9B0D50881DD4D56300BF4C25 /* VictoriaAlbert.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B0D50801DD4D56300BF4C25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Madushani Lekam Wasam Liyanage";
+				TargetAttributes = {
+					9B0D50871DD4D56300BF4C25 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = G6ZU47QNTF;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9B0D50831DD4D56300BF4C25 /* Build configuration list for PBXProject "VictoriaAlbert" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B0D507F1DD4D56300BF4C25;
+			productRefGroup = 9B0D50891DD4D56300BF4C25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B0D50871DD4D56300BF4C25 /* VictoriaAlbert */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B0D50861DD4D56300BF4C25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B0D50961DD4D56300BF4C25 /* LaunchScreen.storyboard in Resources */,
+				9B0D50931DD4D56300BF4C25 /* Assets.xcassets in Resources */,
+				9B0D50911DD4D56300BF4C25 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B0D50841DD4D56300BF4C25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B0D50A61DD4EFF900BF4C25 /* SearchViewController.swift in Sources */,
+				9B0D50A21DD4D64200BF4C25 /* MuseumObjectsTableViewController.swift in Sources */,
+				9B0D50A01DD4D60F00BF4C25 /* APIRequestManager.swift in Sources */,
+				9B0D50A41DD4EBD200BF4C25 /* DetailViewController.swift in Sources */,
+				9B0D508C1DD4D56300BF4C25 /* AppDelegate.swift in Sources */,
+				9B0D509E1DD4D5F100BF4C25 /* MuseumObject.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9B0D508F1DD4D56300BF4C25 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B0D50901DD4D56300BF4C25 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B0D50941DD4D56300BF4C25 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B0D50951DD4D56300BF4C25 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B0D50981DD4D56300BF4C25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B0D50991DD4D56300BF4C25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B0D509B1DD4D56300BF4C25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G6ZU47QNTF;
+				INFOPLIST_FILE = VictoriaAlbert/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nyc.c4q.madushanilekamwasamliyanage.VictoriaAlbert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9B0D509C1DD4D56300BF4C25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G6ZU47QNTF;
+				INFOPLIST_FILE = VictoriaAlbert/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nyc.c4q.madushanilekamwasamliyanage.VictoriaAlbert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B0D50831DD4D56300BF4C25 /* Build configuration list for PBXProject "VictoriaAlbert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B0D50981DD4D56300BF4C25 /* Debug */,
+				9B0D50991DD4D56300BF4C25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B0D509A1DD4D56300BF4C25 /* Build configuration list for PBXNativeTarget "VictoriaAlbert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B0D509B1DD4D56300BF4C25 /* Debug */,
+				9B0D509C1DD4D56300BF4C25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B0D50801DD4D56300BF4C25 /* Project object */;
+}
