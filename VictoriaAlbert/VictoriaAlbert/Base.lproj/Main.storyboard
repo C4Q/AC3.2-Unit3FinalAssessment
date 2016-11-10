@@ -10,7 +10,7 @@
         <!--Cells-->
         <scene sceneID="lkT-fA-aFg">
             <objects>
-                <tableViewController id="7cH-iZ-m6e" userLabel="Cells" sceneMemberID="viewController">
+                <tableViewController id="7cH-iZ-m6e" userLabel="Cells" customClass="TableViewController" customModule="VictoriaAlbert" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="140" sectionHeaderHeight="28" sectionFooterHeight="28" id="umu-1W-BwT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,7 +56,7 @@
         <!--Detail-->
         <scene sceneID="3O3-wg-hfK">
             <objects>
-                <viewController id="Z2q-ed-cU2" userLabel="Detail" sceneMemberID="viewController">
+                <viewController id="Z2q-ed-cU2" userLabel="Detail" customClass="ViewController" customModule="VictoriaAlbert" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zRX-9e-zpR"/>
                         <viewControllerLayoutGuide type="bottom" id="xdQ-6C-SXY"/>
@@ -64,12 +64,24 @@
                     <view key="view" contentMode="scaleToFill" id="iXh-m3-aKh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k2c-yL-72V">
+                                <frame key="frameInset" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k2c-yL-72V" firstAttribute="centerX" secondItem="iXh-m3-aKh" secondAttribute="centerX" id="3O2-pe-dHZ"/>
+                            <constraint firstItem="k2c-yL-72V" firstAttribute="centerY" secondItem="iXh-m3-aKh" secondAttribute="centerY" id="9sq-nX-tey"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bigPic" destination="k2c-yL-72V" id="bbK-u5-3FR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mhk-br-P6W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="674" y="119"/>
+            <point key="canvasLocation" x="672.79999999999995" y="118.29085457271366"/>
         </scene>
     </scenes>
 </document>
