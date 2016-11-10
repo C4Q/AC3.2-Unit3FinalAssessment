@@ -19,6 +19,4 @@ class BricABrac {
         self.subtitle = subtitle
         self.pic = pic
     }
-    
-    
 }

@@ -47,14 +47,25 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BricABracCell", for: indexPath)
-
-        // Configure the cell...
-        cell.textLabel?.text = bricArr![indexPath.row].title
-        cell.detailTextLabel?.text = bricArr![indexPath.row].subtitle
-        cell.imageView?.image = UIImage()
         
-        //bricArr![indexPath.row].pic
-
+        if let titleOfCell = bricArr?[indexPath.row].title {
+            cell.textLabel?.text = titleOfCell
+        } else {
+            cell.textLabel?.text = "Unknown"
+        }
+        
+        if let subtitleOfCell = bricArr?[indexPath.row].title {
+            cell.detailTextLabel?.text = subtitleOfCell
+        } else {
+            cell.detailTextLabel?.text = ""
+        }
+        
+        if let imgString = bricArr?[indexPath.row].pic.thumbPic {
+            cell.imageView?.image = UIImage(named: imgString)
+        } else {
+            cell.imageView?.image = UIImage(named: "https://s13.postimg.org/hhet1hesn/placeholder.png")
+        }
+        
         return cell
     }
     
