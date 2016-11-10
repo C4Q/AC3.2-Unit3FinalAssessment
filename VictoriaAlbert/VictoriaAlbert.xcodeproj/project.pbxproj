@@ -16,6 +16,7 @@
 		D3A6F2301DD4D5FA00F910F4 /* BricABrac.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A6F22F1DD4D5FA00F910F4 /* BricABrac.swift */; };
 		D3A6F2321DD4D82100F910F4 /* Pic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A6F2311DD4D82100F910F4 /* Pic.swift */; };
 		D3A6F2341DD4DC0D00F910F4 /* generalParsingCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A6F2331DD4DC0D00F910F4 /* generalParsingCode.swift */; };
+		D3A6F2391DD50D1800F910F4 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A6F2381DD50D1800F910F4 /* APIHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D3A6F22F1DD4D5FA00F910F4 /* BricABrac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BricABrac.swift; sourceTree = "<group>"; };
 		D3A6F2311DD4D82100F910F4 /* Pic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pic.swift; sourceTree = "<group>"; };
 		D3A6F2331DD4DC0D00F910F4 /* generalParsingCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = generalParsingCode.swift; sourceTree = "<group>"; };
+		D3A6F2381DD50D1800F910F4 /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIHelper.swift; path = ../APIHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		D3A6F2351DD4FC1E00F910F4 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				D3A6F2381DD50D1800F910F4 /* APIHelper.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3A6F2391DD50D1800F910F4 /* APIHelper.swift in Sources */,
 				D3A6F2341DD4DC0D00F910F4 /* generalParsingCode.swift in Sources */,
 				D3A6F2321DD4D82100F910F4 /* Pic.swift in Sources */,
 				D3A6F22E1DD4D52700F910F4 /* ViewController.swift in Sources */,

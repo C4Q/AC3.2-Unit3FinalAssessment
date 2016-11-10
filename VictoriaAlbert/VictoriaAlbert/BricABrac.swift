@@ -38,7 +38,9 @@ class BricABrac {
             
             for item in records {
                 // subtitles are easy
-                guard let itemsSubTitle = records["title"] as? String else {return nil}
+                //oh i need to get into the fields...which are an array of dictionaries...
+                
+                guard let itemsSubTitle = item["title"] as? String else {return nil}
                 // titles are complicated
                 guard let firstPartOfTitle = records["object"] as? String else {return nil}
                 guard let secondPartOfTitle = records["date-text"] as? String else {return nil}
