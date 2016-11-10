@@ -8,6 +8,8 @@
 
 import UIKit
 
+let endpoint = "http://www.vam.ac.uk/api/json/museumobject/search?q=skull"
+
 class TableViewController: UITableViewController {
     
     var selectedBric: BricABrac?

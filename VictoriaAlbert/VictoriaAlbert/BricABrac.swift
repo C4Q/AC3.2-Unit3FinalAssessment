@@ -19,6 +19,48 @@ class BricABrac {
         self.pic = pic
     }
     
+    static func makeBricArr(from data: Data) -> [BricABrac]? {
+        var bricArr: [BricABrac] = []
+        
+        do {
+            let theBigBox:Any = try JSONSerialization.jsonObject(with: data, options: [])
+            
+            guard let castTheBox: [String:Any] = theBigBox as? [String:Any] else {
+                print("there was an error casting to [String:Any] \(theBigBox)")
+                return nil
+            }
+            print("We made \(theBigBox)")
+            
+            guard let records: [String: Any?] = castTheBox["records"] as? [String : Any?] else {
+                print("There was an error casting from [String:Any] to Any \(castTheBox)")
+                return nil
+            }
+            
+            for item in records {
+                // subtitles are easy
+                guard let itemsSubTitle = records["title"] else {return nil}
+                // titles are complicated
+                guard let firstPartOfTitle = records["object"] as? String else {return nil}
+                guard let secondPartOfTitle = records["date-text"] as? String else {return nil}
+                guard let thirdPartOfTitle = records["place"] as? String else {return nil}
+                
+                let itemsTitle = firstPartOfTitle + secondPartOfTitle + thirdPartOfTitle
+                // so are pics
+                guard let imgIDString = records["primary_image_id"] as? String else {return nil}
+                let itemsPic = Pic(imgIDString)
+                
+                let individalBricABrac = BricABrac(title: itemsTitle, subtitle: itemsSubTitle, itemsPic: Pic)
+                
+                bricArr.append(individalBricABrac)
+            }
+            
+        } catch {
+        
+        }
+        
+        return nil
+    }
+    
 //    static func makeBricArray(from data: Data) -> [BricABrac]? {
 //        var bricArr: [BricABrac] = []
 //        
