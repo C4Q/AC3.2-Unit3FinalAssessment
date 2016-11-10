@@ -38,7 +38,7 @@ class BricABrac {
             
             for item in records {
                 // subtitles are easy
-                guard let itemsSubTitle = records["title"] else {return nil}
+                guard let itemsSubTitle = records["title"] as? String else {return nil}
                 // titles are complicated
                 guard let firstPartOfTitle = records["object"] as? String else {return nil}
                 guard let secondPartOfTitle = records["date-text"] as? String else {return nil}
@@ -49,7 +49,7 @@ class BricABrac {
                 guard let imgIDString = records["primary_image_id"] as? String else {return nil}
                 let itemsPic = Pic(imgIDString)
                 
-                let individalBricABrac = BricABrac(title: itemsTitle, subtitle: itemsSubTitle, itemsPic: Pic)
+                let individalBricABrac = BricABrac(title: itemsTitle, subtitle: itemsSubTitle, pic: itemsPic)
                 
                 bricArr.append(individalBricABrac)
             }
