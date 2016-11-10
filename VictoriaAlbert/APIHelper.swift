@@ -10,8 +10,8 @@ import Foundation
 
 //this is modified from my instaCats project: https://github.com/jerjunkel/AC3.2-NSURLSession/blob/master/InstaDogFactory.swift
 
-func APIHelper(apiEndpoint: String, callback: @escaping ([BricABrac]?) -> ()) {
-    if let validInstaCatEndpoint: URL = URL(string: apiEndpoint) {
+func APIHelper(endpoint: String, callback: @escaping ([BricABrac]?) -> ()) {
+    if let validInstaCatEndpoint: URL = URL(string: endpoint) {
         // 1. URLSession/Configuration
         let session = URLSession(configuration: URLSessionConfiguration.default)
         

@@ -17,10 +17,10 @@ class ViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        APIHelper.manager.getData(endPoint: endpoint) { (returnedData: Data?) in
-            guard let validData = returnedData else { return }
+        APIHelper(endpoint: endpoint) { (returnedData: [BricABrac]?) in
+            //guard let validData = returnedData else { return }
             DispatchQueue.main.async {
-                self.bigPic.image = UIImage(data: validData) // this doesn't look quite right; can't we pull this from the object we created on the previous page? if we cache it i guess
+            //    self.bigPic.image = UIImage(data: validData) // this doesn't look quite right; can't we pull this from the object we created on the previous page? if we cache it i guess
                 self.view.reloadInputViews()
             }
         }
