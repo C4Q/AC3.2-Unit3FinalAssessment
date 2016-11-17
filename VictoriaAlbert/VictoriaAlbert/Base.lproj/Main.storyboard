@@ -18,9 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="iR0-gb-D1F">
+                            <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="99l-fh-9xs" id="gPR-wG-QRr"/>
+                            </connections>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MuseumCell" textLabel="O54-OI-1hD" style="IBUITableViewCellStyleDefault" id="ImZ-CW-Keo">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ImZ-CW-Keo" id="T21-Hu-EzZ">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
@@ -44,10 +52,20 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="QgR-hR-GEX"/>
                     <connections>
+                        <outlet property="searchDisplayController" destination="bbN-90-RQC" id="8fj-FB-wc5"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="MuseumPhotoSegue" id="Zyc-XC-P5a"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dLL-gQ-wv8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="bbN-90-RQC">
+                    <connections>
+                        <outlet property="delegate" destination="99l-fh-9xs" id="kxt-5R-VZc"/>
+                        <outlet property="searchBar" destination="iR0-gb-D1F" id="YDI-e1-MyI"/>
+                        <outlet property="searchContentsController" destination="99l-fh-9xs" id="CNS-Rb-sad"/>
+                        <outlet property="searchResultsDataSource" destination="99l-fh-9xs" id="Jc2-gK-mGT"/>
+                        <outlet property="searchResultsDelegate" destination="99l-fh-9xs" id="VPI-VR-8WY"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="287.19999999999999" y="122.78860569715144"/>
         </scene>
