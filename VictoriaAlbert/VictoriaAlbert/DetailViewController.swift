@@ -9,29 +9,29 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-    let imgEndpoint = "http://media.vam.ac.uk/media/thira/collection_images/2006AM/2006AM6763_jpg_o.jpg"
+    var detailImgEndpoint = ""
     var detailMuseumField: [Museum]?
+   
     @IBOutlet weak var detailImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        /*
-        if detailMuseumField.count > 0 {
-            APIRequestManager.manager.getData(endPoint: ) { (data: Data?) in
+        
+        if (detailMuseumField?.count)! > 0 {
+            APIRequestManager.manager.getData(endPoint: detailImgEndpoint) { (data: Data?) in
                 if let validData = data,
                     let image = UIImage(data: validData) {
                     DispatchQueue.main.async {
-                        acvc.briefMovieImage.image = image
-                        acvc.setNeedsLayout()
-                        
+                        self.detailImage.image = image
+                        self.view.reloadInputViews()
                     }
                 }
             }
         }
 
-        detailImage.image = detailMuseumField
+        //detailImage.image = detailMuseumField
     
- */
+ 
  }
 
     
