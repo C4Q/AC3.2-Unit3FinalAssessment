@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A26C19781DD4D4F50006A406 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26C19771DD4D4F50006A406 /* AppDelegate.swift */; };
+		A26C197A1DD4D4F50006A406 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26C19791DD4D4F50006A406 /* ViewController.swift */; };
+		A26C197D1DD4D4F50006A406 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26C197B1DD4D4F50006A406 /* Main.storyboard */; };
+		A26C197F1DD4D4F50006A406 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A26C197E1DD4D4F50006A406 /* Assets.xcassets */; };
+		A26C19821DD4D4F50006A406 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26C19801DD4D4F50006A406 /* LaunchScreen.storyboard */; };
+		A26C198D1DD4D4F60006A406 /* VictoriaAlbertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26C198C1DD4D4F60006A406 /* VictoriaAlbertTests.swift */; };
+		A26C19981DD4D6460006A406 /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26C19971DD4D6460006A406 /* APIRequestManager.swift */; };
+		A26C199B1DD4D6A10006A406 /* VicAlbMuseumTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26C199A1DD4D6A10006A406 /* VicAlbMuseumTableViewController.swift */; };
+		A26C199E1DD4D74E0006A406 /* MuseumObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26C199D1DD4D74E0006A406 /* MuseumObj.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A26C19891DD4D4F60006A406 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A26C196C1DD4D4F50006A406 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A26C19731DD4D4F50006A406;
+			remoteInfo = VictoriaAlbert;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A26C19741DD4D4F50006A406 /* VictoriaAlbert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VictoriaAlbert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A26C19771DD4D4F50006A406 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A26C19791DD4D4F50006A406 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A26C197C1DD4D4F50006A406 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A26C197E1DD4D4F50006A406 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A26C19811DD4D4F50006A406 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A26C19831DD4D4F50006A406 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A26C19881DD4D4F60006A406 /* VictoriaAlbertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VictoriaAlbertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A26C198C1DD4D4F60006A406 /* VictoriaAlbertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VictoriaAlbertTests.swift; sourceTree = "<group>"; };
+		A26C198E1DD4D4F60006A406 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A26C19971DD4D6460006A406 /* APIRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIRequestManager.swift; path = "../../../AC3.2-Unit3MidunitAssessment/SpotifySearch/APIRequestManager.swift"; sourceTree = "<group>"; };
+		A26C199A1DD4D6A10006A406 /* VicAlbMuseumTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VicAlbMuseumTableViewController.swift; sourceTree = "<group>"; };
+		A26C199D1DD4D74E0006A406 /* MuseumObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MuseumObj.swift; path = ../MuseumObj.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A26C19711DD4D4F50006A406 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26C19851DD4D4F60006A406 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A26C196B1DD4D4F50006A406 = {
+			isa = PBXGroup;
+			children = (
+				A26C19761DD4D4F50006A406 /* VictoriaAlbert */,
+				A26C198B1DD4D4F60006A406 /* VictoriaAlbertTests */,
+				A26C19751DD4D4F50006A406 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A26C19751DD4D4F50006A406 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A26C19741DD4D4F50006A406 /* VictoriaAlbert.app */,
+				A26C19881DD4D4F60006A406 /* VictoriaAlbertTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A26C19761DD4D4F50006A406 /* VictoriaAlbert */ = {
+			isa = PBXGroup;
+			children = (
+				A26C19771DD4D4F50006A406 /* AppDelegate.swift */,
+				A26C199F1DD4EA2E0006A406 /* Model */,
+				A26C19991DD4D65A0006A406 /* Networking */,
+				A26C199C1DD4D6E00006A406 /* ViewControllers  */,
+				A26C197B1DD4D4F50006A406 /* Main.storyboard */,
+				A26C197E1DD4D4F50006A406 /* Assets.xcassets */,
+				A26C19801DD4D4F50006A406 /* LaunchScreen.storyboard */,
+				A26C19831DD4D4F50006A406 /* Info.plist */,
+			);
+			path = VictoriaAlbert;
+			sourceTree = "<group>";
+		};
+		A26C198B1DD4D4F60006A406 /* VictoriaAlbertTests */ = {
+			isa = PBXGroup;
+			children = (
+				A26C198C1DD4D4F60006A406 /* VictoriaAlbertTests.swift */,
+				A26C198E1DD4D4F60006A406 /* Info.plist */,
+			);
+			path = VictoriaAlbertTests;
+			sourceTree = "<group>";
+		};
+		A26C19991DD4D65A0006A406 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A26C19971DD4D6460006A406 /* APIRequestManager.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		A26C199C1DD4D6E00006A406 /* ViewControllers  */ = {
+			isa = PBXGroup;
+			children = (
+				A26C199A1DD4D6A10006A406 /* VicAlbMuseumTableViewController.swift */,
+				A26C19791DD4D4F50006A406 /* ViewController.swift */,
+			);
+			name = "ViewControllers ";
+			sourceTree = "<group>";
+		};
+		A26C199F1DD4EA2E0006A406 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A26C199D1DD4D74E0006A406 /* MuseumObj.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A26C19731DD4D4F50006A406 /* VictoriaAlbert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A26C19911DD4D4F60006A406 /* Build configuration list for PBXNativeTarget "VictoriaAlbert" */;
+			buildPhases = (
+				A26C19701DD4D4F50006A406 /* Sources */,
+				A26C19711DD4D4F50006A406 /* Frameworks */,
+				A26C19721DD4D4F50006A406 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VictoriaAlbert;
+			productName = VictoriaAlbert;
+			productReference = A26C19741DD4D4F50006A406 /* VictoriaAlbert.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A26C19871DD4D4F60006A406 /* VictoriaAlbertTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A26C19941DD4D4F60006A406 /* Build configuration list for PBXNativeTarget "VictoriaAlbertTests" */;
+			buildPhases = (
+				A26C19841DD4D4F60006A406 /* Sources */,
+				A26C19851DD4D4F60006A406 /* Frameworks */,
+				A26C19861DD4D4F60006A406 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A26C198A1DD4D4F60006A406 /* PBXTargetDependency */,
+			);
+			name = VictoriaAlbertTests;
+			productName = VictoriaAlbertTests;
+			productReference = A26C19881DD4D4F60006A406 /* VictoriaAlbertTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A26C196C1DD4D4F50006A406 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Kadell;
+				TargetAttributes = {
+					A26C19731DD4D4F50006A406 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					A26C19871DD4D4F60006A406 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A26C19731DD4D4F50006A406;
+					};
+				};
+			};
+			buildConfigurationList = A26C196F1DD4D4F50006A406 /* Build configuration list for PBXProject "VictoriaAlbert" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A26C196B1DD4D4F50006A406;
+			productRefGroup = A26C19751DD4D4F50006A406 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A26C19731DD4D4F50006A406 /* VictoriaAlbert */,
+				A26C19871DD4D4F60006A406 /* VictoriaAlbertTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A26C19721DD4D4F50006A406 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A26C19821DD4D4F50006A406 /* LaunchScreen.storyboard in Resources */,
+				A26C197F1DD4D4F50006A406 /* Assets.xcassets in Resources */,
+				A26C197D1DD4D4F50006A406 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26C19861DD4D4F60006A406 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A26C19701DD4D4F50006A406 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A26C199B1DD4D6A10006A406 /* VicAlbMuseumTableViewController.swift in Sources */,
+				A26C19981DD4D6460006A406 /* APIRequestManager.swift in Sources */,
+				A26C197A1DD4D4F50006A406 /* ViewController.swift in Sources */,
+				A26C199E1DD4D74E0006A406 /* MuseumObj.swift in Sources */,
+				A26C19781DD4D4F50006A406 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26C19841DD4D4F60006A406 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A26C198D1DD4D4F60006A406 /* VictoriaAlbertTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A26C198A1DD4D4F60006A406 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A26C19731DD4D4F50006A406 /* VictoriaAlbert */;
+			targetProxy = A26C19891DD4D4F60006A406 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A26C197B1DD4D4F50006A406 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A26C197C1DD4D4F50006A406 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A26C19801DD4D4F50006A406 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A26C19811DD4D4F50006A406 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A26C198F1DD4D4F60006A406 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A26C19901DD4D4F60006A406 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A26C19921DD4D4F60006A406 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VictoriaAlbert/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Example.VictoriaAlbert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A26C19931DD4D4F60006A406 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VictoriaAlbert/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Example.VictoriaAlbert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A26C19951DD4D4F60006A406 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VictoriaAlbertTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Example.VictoriaAlbertTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VictoriaAlbert.app/VictoriaAlbert";
+			};
+			name = Debug;
+		};
+		A26C19961DD4D4F60006A406 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VictoriaAlbertTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Example.VictoriaAlbertTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VictoriaAlbert.app/VictoriaAlbert";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A26C196F1DD4D4F50006A406 /* Build configuration list for PBXProject "VictoriaAlbert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A26C198F1DD4D4F60006A406 /* Debug */,
+				A26C19901DD4D4F60006A406 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A26C19911DD4D4F60006A406 /* Build configuration list for PBXNativeTarget "VictoriaAlbert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A26C19921DD4D4F60006A406 /* Debug */,
+				A26C19931DD4D4F60006A406 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A26C19941DD4D4F60006A406 /* Build configuration list for PBXNativeTarget "VictoriaAlbertTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A26C19951DD4D4F60006A406 /* Debug */,
+				A26C19961DD4D4F60006A406 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A26C196C1DD4D4F50006A406 /* Project object */;
+}
