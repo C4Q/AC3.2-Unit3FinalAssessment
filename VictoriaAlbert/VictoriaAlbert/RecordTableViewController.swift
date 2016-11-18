@@ -104,7 +104,11 @@ class RecordTableViewController: UITableViewController, UITextFieldDelegate {
         record = sortRecords(at: indexPath, sorted: sorted)
         
         if let recordFixed = record {
-            cell.textLabel?.text = "\(recordFixed.object), \(recordFixed.date) - \(recordFixed.place)"
+            var recordLabelTextString = "\(recordFixed.object), \(recordFixed.date)"
+            if recordFixed.place != "" {
+                recordLabelTextString += " - \(recordFixed.place)"
+            }
+            cell.textLabel?.text = recordLabelTextString
             cell.detailTextLabel?.text = recordFixed.title
             
             APIRequestManager.manager.getData(endPoint: recordFixed.imageSmall ) { (data: Data?) in

@@ -14,7 +14,7 @@ enum RecordModelParseError: Error {
 
 class Record {
     let object:		String
-    let imageBig:	String //primary_image_id\
+    let imageBig:	String //primary_image_id
     let imageSmall:	String
     let date:		String //date_text
     let place:		String //place

@@ -33,8 +33,12 @@ class RecordViewController: UIViewController {
                 }
             }
         }
+        var recordLabelTextString = "\(validRecord.object), \(validRecord.date)"
+        if validRecord.place != "" {
+            recordLabelTextString += " - \(validRecord.place)"
+        }
         self.recordTitle.text = validRecord.title
-        self.recordLabel.text = "\(validRecord.object), \(validRecord.date) - \(validRecord.place)"
+        self.recordLabel.text = recordLabelTextString
     }
 }
 
