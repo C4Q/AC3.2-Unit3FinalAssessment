@@ -11,12 +11,12 @@ import Foundation
 //this is modified from my instaCats project: https://github.com/jerjunkel/AC3.2-NSURLSession/blob/master/InstaDogFactory.swift
 
 func APIHelper(endpoint: String, callback: @escaping ([BricABrac]?) -> ()) {
-    if let validInstaCatEndpoint: URL = URL(string: endpoint) {
+    if let validEndpoint: URL = URL(string: endpoint) {
         // 1. URLSession/Configuration
         let session = URLSession(configuration: URLSessionConfiguration.default)
         
         // 2. dataTaskWithURL
-        session.dataTask(with: validInstaCatEndpoint) { (data: Data?, response: URLResponse?, error: Error?) in
+        session.dataTask(with: validEndpoint) { (data: Data?, response: URLResponse?, error: Error?) in
             // 3. check for errors right away
             if error != nil {
                 print("Error encountered!: \(error!)")

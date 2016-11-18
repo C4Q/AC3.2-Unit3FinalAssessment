@@ -17,6 +17,7 @@
 		D3A6F2321DD4D82100F910F4 /* Pic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A6F2311DD4D82100F910F4 /* Pic.swift */; };
 		D3A6F2341DD4DC0D00F910F4 /* generalParsingCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A6F2331DD4DC0D00F910F4 /* generalParsingCode.swift */; };
 		D3A6F2391DD50D1800F910F4 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A6F2381DD50D1800F910F4 /* APIHelper.swift */; };
+		D3AA128C1DDF6CBF00924623 /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AA128B1DDF6CBF00924623 /* APIRequestManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		D3A6F2311DD4D82100F910F4 /* Pic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pic.swift; sourceTree = "<group>"; };
 		D3A6F2331DD4DC0D00F910F4 /* generalParsingCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = generalParsingCode.swift; sourceTree = "<group>"; };
 		D3A6F2381DD50D1800F910F4 /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIHelper.swift; path = ../APIHelper.swift; sourceTree = "<group>"; };
+		D3AA128B1DDF6CBF00924623 /* APIRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				D3A6F2381DD50D1800F910F4 /* APIHelper.swift */,
+				D3AA128B1DDF6CBF00924623 /* APIRequestManager.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3AA128C1DDF6CBF00924623 /* APIRequestManager.swift in Sources */,
 				D3A6F2391DD50D1800F910F4 /* APIHelper.swift in Sources */,
 				D3A6F2341DD4DC0D00F910F4 /* generalParsingCode.swift in Sources */,
 				D3A6F2321DD4D82100F910F4 /* Pic.swift in Sources */,
@@ -353,6 +357,7 @@
 				D3A6F2271DD4D3E100F910F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

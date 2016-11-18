@@ -8,15 +8,20 @@
 
 import UIKit
 
-let endpoint = "http://www.vam.ac.uk/api/json/museumobject/search?q=skull"
+let endPoint = "http://www.vam.ac.uk/api/json/museumobject/search?q=skull"
 
 class TableViewController: UITableViewController {
     
     var selectedBric: BricABrac?
     var bricArr:[BricABrac]? = [BricABrac]()
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "Skulls"
+        loadBricABrac(searchString: endPoint)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -116,5 +121,22 @@ class TableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    func loadBricABrac(searchString: String) {
+        APIRequestManager.manager.getData(endPoint: "http://www.vam.ac.uk/api/json/museumobject/search?q=skull") { (data) in
+            if data != nil {
+                
+                if BricABrac.makeBricArr(from: data!) != nil {
+                    print("#####################We've got Records! \(self.bricArr?.count)")
+//                    self.bricArr = bricArr
+//                    self.countLocations()
+                    DispatchQueue.main.async {
+                        self.tableView.reloadData()
+                    }
+                } else {
+                    print("###################################### We have a problem ##############################")
+                }
+            }
+        }
+    }
 }
