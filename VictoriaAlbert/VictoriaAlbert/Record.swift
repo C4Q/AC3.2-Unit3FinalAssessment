@@ -46,28 +46,27 @@ class Record {
         guard let place = fields["place"] as? String else { throw RecordModelParseError.place }
         guard let title = fields["title"] as? String else { throw RecordModelParseError.title }
         
-        func imageToUrl(input: String, big: Bool) -> String {
-            guard input.characters.count > 0 else { return "" }
+        func imageToUrl(imageSnippet: String, big: Bool) -> String {
+            guard imageSnippet.characters.count > 0 else { return "" }
             var baseURL = "http://media.vam.ac.uk/media/thira/collection_images/"
             
             if image.characters.count > 6 {
-                let index = input.index(image.startIndex, offsetBy: 6)
-                baseURL += input.substring(to: index)
+                baseURL += String(imageSnippet.characters.prefix(6))
             } else {
-                baseURL += input
+                baseURL += imageSnippet
             }
             
             if big {
-                baseURL += "/\(input).jpg"
+                baseURL += "/\(imageSnippet).jpg"
             } else {
-                baseURL += "/\(input)_jpg_o.jpg"
+                baseURL += "/\(imageSnippet)_jpg_o.jpg"
             }
             return baseURL
         }
         
         self.init(object: object,
-                  imageBig: imageToUrl(input: image, big: true),
-                  imageSmall: imageToUrl(input: image, big: false),
+                  imageBig: imageToUrl(imageSnippet: image, big: true),
+                  imageSmall: imageToUrl(imageSnippet: image, big: false),
                   date: date,
                   place: place,
                   title: title)
