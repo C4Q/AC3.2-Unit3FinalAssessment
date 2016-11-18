@@ -76,9 +76,7 @@ class Museum {
                 
                 let title = fieldsDict["title"] as? String
                 
-                guard let primaryImageID = fieldsDict["primary_image_id"] as? String else {
-                    throw ParsingErrors.primaryImageIDError
-                }
+                let primaryImageID = fieldsDict["primary_image_id"] as? String
                 
                 guard let artist = fieldsDict["artist"] as? String else {
                     throw ParsingErrors.artistError
@@ -96,7 +94,7 @@ class Museum {
                     throw ParsingErrors.yearError
                 }
                 
-                let museum: Museum = Museum(object: object, dateText: dateText, place: place, title: title ?? "", primaryImageID: primaryImageID, artist: artist, location: location, museumNumber: museumNumber, year: year)
+                let museum: Museum = Museum(object: object, dateText: dateText, place: place, title: title ?? "", primaryImageID: primaryImageID ?? "", artist: artist, location: location, museumNumber: museumNumber, year: year)
                 allMuseums.append(museum)
             }
             return allMuseums
