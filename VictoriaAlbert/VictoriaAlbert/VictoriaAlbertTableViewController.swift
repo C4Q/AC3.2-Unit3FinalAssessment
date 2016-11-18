@@ -9,7 +9,7 @@
 import UIKit
 
 class VictoriaAlbertTableViewController: UITableViewController, UISearchBarDelegate {
-    
+    //API: http://www.vam.ac.uk/api
     let urlString = "http://www.vam.ac.uk/api/json/museumobject/"
     
     var objectsArray = [Object]()
@@ -40,8 +40,7 @@ class VictoriaAlbertTableViewController: UITableViewController, UISearchBarDeleg
         print(objectsArray.count)
         return objectsArray.count
     }
-    
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "objectCellIdentifier", for: indexPath)
@@ -67,16 +66,27 @@ class VictoriaAlbertTableViewController: UITableViewController, UISearchBarDeleg
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedObject = objectsArray[indexPath.row]
-        performSegue(withIdentifier: "detailObjectViewControllerSegue", sender: selectedObject)
-    }
-    
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let selectedObject = objectsArray[indexPath.row]
+//        performSegue(withIdentifier: "detailObjectViewControllerSegue", sender: selectedObject)
+//    }
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "detailObjectViewControllerSegue" {
             let detailObjectViewController = segue.destination as! DetailObjectViewController
-            let selectedObject = sender as? Object
-            detailObjectViewController.selectedObject = selectedObject
+//            let selectedObject = sender as? Object
+//            detailObjectViewController.selectedObject = selectedObject
+            if let cell = sender as? UITableViewCell {
+                if let indexPath = tableView.indexPath(for: cell) {
+                    let selectedObject = objectsArray[indexPath.row]
+                    detailObjectViewController.selectedObject = selectedObject
+                }
+            }
+//            let indexPath = tableView.indexPathForSelectedRow {
+//                let selectedObject = objectsArray[indexPath.row]
+//                detailObjectViewController.selectedObject = selectedObject
+//            }
+            
         }
     }
     
@@ -87,7 +97,6 @@ class VictoriaAlbertTableViewController: UITableViewController, UISearchBarDeleg
         searchBar.delegate = self
         self.navigationItem.titleView = searchBar
     }
-    
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let searchText = searchBar.text else {return}

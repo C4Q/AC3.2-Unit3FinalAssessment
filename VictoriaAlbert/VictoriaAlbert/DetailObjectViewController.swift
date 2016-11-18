@@ -23,15 +23,14 @@ class DetailObjectViewController: UIViewController {
         self.navigationItem.title = selectedObject.object
         loadInfo()
     }
-    
-    
+
     func loadInfo () {
         self.objectDateTextLabel.text = "Date: " + selectedObject.date_text
         self.objectPlaceLabel.text = "Place: " + selectedObject.place
         self.objectArtistLabel.text = "Artist: " + selectedObject.artist
         self.objectlocationLabel.text = "Location: " + selectedObject.location
         
-        guard let validImageURLString = selectedObject.imageURLString else {return}
+        guard let validImageURLString = selectedObject.imageLargeURLString else {return}
         
         APIRequestManager.manager.getData(endpoint: validImageURLString) { (data) in
             guard let validData = data else {return}

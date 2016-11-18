@@ -34,7 +34,6 @@ enum ObjectModelParseError : Error {
     case collection_code
 }
 
-
 class Object {
     let primary_image_id : String
     let rights : Int
@@ -65,7 +64,21 @@ class Object {
             let imageSetString =  str[startIndex...endIndex]
             return "http://media.vam.ac.uk/media/thira/collection_images/\(imageSetString)/\(primary_image_id)_jpg_o.jpg"
         } else {
-            return "http://media.vam.ac.uk/media/thira/collection_images/\(primary_image_id)/\(primary_image_id)_jpg_o.jpg"
+//            return "http://media.vam.ac.uk/media/thira/collection_images/\(primary_image_id)/\(primary_image_id)_jpg_o.jpg"
+            return nil
+        }
+    }
+    
+    var imageLargeURLString: String? {
+        if primary_image_id.characters.count >= 6 {
+            let str = primary_image_id
+            let startIndex = str.index(str.startIndex, offsetBy: 0)
+            let endIndex = str.index(str.startIndex, offsetBy: 5)
+            let imageSetString =  str[startIndex...endIndex]
+            return "http://media.vam.ac.uk/media/thira/collection_images/\(imageSetString)/\(primary_image_id).jpg"
+        } else {
+//            return "http://media.vam.ac.uk/media/thira/collection_images/\(primary_image_id)/\(primary_image_id).jpg"
+            return nil
         }
     }
     
