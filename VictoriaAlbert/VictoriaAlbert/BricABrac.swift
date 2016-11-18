@@ -25,26 +25,31 @@ class BricABrac {
         do {
             let theBigBox:Any = try JSONSerialization.jsonObject(with: data, options: [])
             
-            guard let castTheBox: [String:Any] = theBigBox as? [String:Any] else {
-                print("there was an error casting to [String:Any] \(theBigBox)")
+            guard let castTheBox = theBigBox as? [String:Any] else {
+                print("There was an error casting from [String:Any] to Any \(theBigBox)")
                 return nil
             }
             print("We made \(theBigBox)")
             
-            guard let records: [String: Any?] = castTheBox["records"] as? [String : Any?] else {
-                print("There was an error casting from [String:Any] to Any \(castTheBox)")
+            guard let records = castTheBox["records"] as? [String : Any] else {
+                print("There was an error casting from [String:Any] to [String:Any] \(castTheBox)")
                 return nil
             }
             
             for item in records {
+            
+                guard let fields = records["fields"] as? [String: Any] else {
+                    print("There was an error casting from [[String: Any]] to [String:Any] \(records)")
+                    return nil
+                }
                 // subtitles are easy
                 //oh i need to get into the fields...which are an array of dictionaries...
                 
-                guard let itemsSubTitle = item["title"] as? String else {return nil}
+                guard let itemsSubTitle = fields["title"] as? String else {return nil}
                 // titles are complicated
-                guard let firstPartOfTitle = records["object"] as? String else {return nil}
-                guard let secondPartOfTitle = records["date-text"] as? String else {return nil}
-                guard let thirdPartOfTitle = records["place"] as? String else {return nil}
+                guard let firstPartOfTitle = fields["object"] as? String else {return nil}
+                guard let secondPartOfTitle = fields["date-text"] as? String else {return nil}
+                guard let thirdPartOfTitle = fields["place"] as? String else {return nil}
                 
                 let itemsTitle = firstPartOfTitle + secondPartOfTitle + thirdPartOfTitle
                 // so are pics
