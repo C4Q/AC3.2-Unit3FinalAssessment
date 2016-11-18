@@ -16,6 +16,9 @@ struct VictoriaAlbert {
     let location: String
     let imageID: String
     
+    let thumbnailImageURLString: String
+    let fullImageURLString: String
+    
     static func parseData(data: Data) -> [VictoriaAlbert]? {
         
         var victoriaAlbertToReturn: [VictoriaAlbert] = []
@@ -62,7 +65,15 @@ struct VictoriaAlbert {
                     return nil
                 }
                 
-                victoriaAlbertToReturn.append(VictoriaAlbert(object: object, dateText: dateText, place: place, title: title, location: location, imageID: imageID))
+                let imagePath = String(imageID.characters.prefix(6))
+                
+                let thumbnailImageUrlString = "http://media.vam.ac.uk/media/thira/collection_images/\(imagePath)/\(imageID)_jpg_o.jpg"
+                
+                let fullImageURLString = "http://media.vam.ac.uk/media/thira/collection_images/\(imagePath)/\(imageID).jpg"
+                
+                let vaObject = VictoriaAlbert(object: object, dateText: dateText, place: place, title: title, location: location, imageID: imageID, thumbnailImageURLString: thumbnailImageUrlString, fullImageURLString: fullImageURLString)
+                
+                victoriaAlbertToReturn.append(vaObject)
                 dump(victoriaAlbertToReturn)
             }
 

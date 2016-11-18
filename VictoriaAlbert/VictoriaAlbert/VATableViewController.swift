@@ -12,19 +12,16 @@ class VATableViewController: UITableViewController, UISearchBarDelegate {
     
     var victoriaAlbert: [VictoriaAlbert] = []
     let endPoint = "http://www.vam.ac.uk/api/json/museumobject/search?q=ring"
-//    var imageURL = "http://media.vam.ac.uk/media/thira/collection_images/2006AM/\(imageID).jpg"
-//    var thumbnailURL = "http://media.vam.ac.uk/media/thira/collection_images/2006AM/\(imageID)_jpg_o.jpg"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "Victoria and Albert Museum"
         getVictoriaAlbertApi()
-//        searchBar()
+        searchBar()
     }
     
     // MARK: - Method
-    
     func getVictoriaAlbertApi() {
         APIRequestManager.manager.getData(apiEndPoint: endPoint) { (data: Data?) in
             guard let validData = data else { return }
@@ -39,50 +36,50 @@ class VATableViewController: UITableViewController, UISearchBarDelegate {
         }
     }
     
-//    func searchBar() {
-//        let searchBar = UISearchBar()
-//        searchBar.showsCancelButton = false
-//        searchBar.placeholder = "Enter your search here"
-//        searchBar.delegate = self
-//        self.navigationItem.titleView = searchBar
-//    }
-
+        func searchBar() {
+            let searchBar = UISearchBar()
+            searchBar.showsCancelButton = false
+            searchBar.placeholder = "Enter your search here"
+            searchBar.delegate = self
+            self.navigationItem.titleView = searchBar
+        }
+    
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return victoriaAlbert.count
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "VictoriaAlbertCell", for: indexPath)
 
-        let row = victoriaAlbert[indexPath.row]
-        cell.textLabel?.text = "\(row.object), \(row.dateText), \(row.place)"
-        cell.detailTextLabel?.text = row.title
-        
-        
-
+        let va = victoriaAlbert[indexPath.row]
+        cell.textLabel?.text = "\(va.object), \(va.dateText), \(va.place)"
+        cell.detailTextLabel?.text = va.title
+       
+        APIRequestManager.manager.getData(apiEndPoint: va.thumbnailImageURLString) { (data: Data?) in
+            if  let validData = data,
+                let validImage = UIImage(data: validData) {
+                DispatchQueue.main.async {
+                    cell.imageView?.image = validImage
+                    cell.setNeedsLayout()
+                }
+            }
+        }
         return cell
     }
     
-    
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if let destinationVC = segue.destination as? VAViewController,
+        if let destinationVC = segue.destination as? VAViewController,
             let cell = sender as? UITableViewCell,
             let indexPath = tableView.indexPath(for: cell) {
-                destinationVC.victoria = victoriaAlbert[indexPath.row]
+            destinationVC.victoria = victoriaAlbert[indexPath.row]
+        }
     }
-}
     
-
+    
 }
