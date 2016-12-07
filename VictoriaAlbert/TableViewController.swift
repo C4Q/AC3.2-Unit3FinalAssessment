@@ -15,8 +15,6 @@ class TableViewController: UITableViewController {
     var selectedBric: BricABrac?
     var bricArr:[BricABrac]? = [BricABrac]()
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -67,11 +65,13 @@ class TableViewController: UITableViewController {
             cell.detailTextLabel?.text = ""
         }
         
+        /*
         if let imgString = bricArr?[indexPath.row].pic.thumbPic {
             cell.imageView?.image = UIImage(named: imgString)
         } else {
             cell.imageView?.image = UIImage(named: "https://s13.postimg.org/hhet1hesn/placeholder.png")
         }
+        */
         
         return cell
     }

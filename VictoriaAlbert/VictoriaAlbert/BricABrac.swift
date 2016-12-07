@@ -11,9 +11,9 @@ import Foundation
 class BricABrac {
     let title: String // Cell titles should be constructed from {object}, {date_text} - {place}, for example
     let subtitle: String // From title field
-    let pic: Pic
+    let pic: String
     
-    init(title: String, subtitle: String, pic: Pic) {
+    init(title: String, subtitle: String, pic: String) {
         self.title = title
         self.subtitle = subtitle
         self.pic = pic
@@ -23,43 +23,46 @@ class BricABrac {
         var bricArr: [BricABrac] = []
         
         do {
-            let theBigBox:Any = try JSONSerialization.jsonObject(with: data, options: [])
+            let theBigBox = try JSONSerialization.jsonObject(with: data, options: [])
             
             guard let castTheBox = theBigBox as? [String:Any] else {
                 print("There was an error casting from [String:Any] to Any \(theBigBox)")
                 return nil
             }
-            print("We made \(theBigBox)")
+    //        print("We made \(theBigBox)")
             
-            guard let records = castTheBox["records"] as? [String : Any] else {
-                print("There was an error casting from [String:Any] to [String:Any] \(castTheBox)")
+            guard let records = castTheBox["records"] as? [[String : Any]] else {
+                print("There was an error casting from [String:Any] to [String:Any] so we couldn't get records \(castTheBox)")
                 return nil
             }
             
             for item in records {
             
-                guard let fields = records["fields"] as? [String: Any] else {
-                    print("There was an error casting from [[String: Any]] to [String:Any] \(records)")
+                guard let fields = records[0] as? [String: Any] else {
+                    print("There was an error casting from [[String: Any]] to [String:Any] so we couldn't get fields \(records)")
                     return nil
                 }
                 // subtitles are easy
                 //oh i need to get into the fields...which are an array of dictionaries...
+                    guard let itemsSubTitle = fields["title"] as? String else {return nil}
+                    // titles are complicated
+                    guard let firstPartOfTitle = fields["object"] as? String else {return nil}
+                    guard let secondPartOfTitle = fields["date-text"] as? String else {return nil}
+                    guard let thirdPartOfTitle = fields["place"] as? String else {return nil}
                 
-                guard let itemsSubTitle = fields["title"] as? String else {return nil}
-                // titles are complicated
-                guard let firstPartOfTitle = fields["object"] as? String else {return nil}
-                guard let secondPartOfTitle = fields["date-text"] as? String else {return nil}
-                guard let thirdPartOfTitle = fields["place"] as? String else {return nil}
-                
-                let itemsTitle = firstPartOfTitle + secondPartOfTitle + thirdPartOfTitle
+                    let itemsTitle = firstPartOfTitle + secondPartOfTitle + thirdPartOfTitle
+                    print(itemsTitle)
                 // so are pics
-                guard let imgIDString = records["primary_image_id"] as? String else {return nil}
-                let itemsPic = Pic(imgIDString)
+                guard let imgIDString = fields["primary_image_id"] as? String else {return nil}
+                let itemsPic = imgIDString
+                print(itemsPic)
                 
                 let individalBricABrac = BricABrac(title: itemsTitle, subtitle: itemsSubTitle, pic: itemsPic)
                 
                 bricArr.append(individalBricABrac)
             }
+            
+            print(bricArr)
             
         } catch {
         
