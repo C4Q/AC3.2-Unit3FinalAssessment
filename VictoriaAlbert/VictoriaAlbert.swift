@@ -10,10 +10,8 @@ import Foundation
 
 struct VictoriaAlbert {
     let object: String
-    let dateText: String
     let place: String
     let title: String
-    let location: String
     let imageID: String
     
     let thumbnailImageURLString: String
@@ -44,20 +42,12 @@ struct VictoriaAlbert {
                     print("Error parsing object in fields")
                     return nil
                 }
-                guard let dateText = fields["date_text"] as? String else {
-                    print("Error parsing date text in fields")
-                    return nil
-                }
                 guard let place = fields["place"] as? String else {
                     print("Error parsing place in fields")
                     return nil
                 }
                 guard let title = fields["title"] as? String else {
                     print("Error parsing title in fields")
-                    return nil
-                }
-                guard let location = fields["location"] as? String else {
-                    print("Error parsing location in fields")
                     return nil
                 }
                 guard let imageID = fields["primary_image_id"] as? String else {
@@ -71,7 +61,7 @@ struct VictoriaAlbert {
                 
                 let fullImageURLString = "http://media.vam.ac.uk/media/thira/collection_images/\(imagePath)/\(imageID).jpg"
                 
-                let vaObject = VictoriaAlbert(object: object, dateText: dateText, place: place, title: title, location: location, imageID: imageID, thumbnailImageURLString: thumbnailImageUrlString, fullImageURLString: fullImageURLString)
+                let vaObject = VictoriaAlbert(object: object, place: place, title: title, imageID: imageID, thumbnailImageURLString: thumbnailImageUrlString, fullImageURLString: fullImageURLString)
                 
                 victoriaAlbertToReturn.append(vaObject)
                 dump(victoriaAlbertToReturn)

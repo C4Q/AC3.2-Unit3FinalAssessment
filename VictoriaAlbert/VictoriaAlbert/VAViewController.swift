@@ -12,7 +12,6 @@ class VAViewController: UIViewController {
     
     @IBOutlet weak var vaImage: UIImageView!
     @IBOutlet weak var dateTextLabel: UILabel!
-    @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var objectLabel: UILabel!
     @IBOutlet weak var placeLabel: UILabel!
     var victoria: VictoriaAlbert!
@@ -29,9 +28,7 @@ class VAViewController: UIViewController {
         
         objectLabel.text = victoria!.object
         placeLabel.text = "Place originated: \(victoria!.place)"
-        dateTextLabel.text = "Dated: \(victoria!.dateText)"
-        locationLabel.text = "Located at: \(victoria!.location)"
-        
+
         APIRequestManager.manager.getData(apiEndPoint: victoria.fullImageURLString) { (data: Data?) in
             if let validData = data,
                 let validImage = UIImage(data: validData) {

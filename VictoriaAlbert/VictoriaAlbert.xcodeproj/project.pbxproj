@@ -41,12 +41,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C619DE51DF7C29100E98EEB /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				9C86AABC1DD4D583002FB966 /* LaunchScreen.storyboard */,
+				9C86AAD01DD4F4A4002FB966 /* Main.storyboard */,
+			);
+			name = StoryBoard;
+			sourceTree = "<group>";
+		};
+		9C619DE61DF7C29A00E98EEB /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				9C86AABF1DD4D583002FB966 /* Info.plist */,
+				9C86AABA1DD4D583002FB966 /* Assets.xcassets */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
 		9C86AAA71DD4D583002FB966 = {
 			isa = PBXGroup;
 			children = (
-				9C86AAD01DD4F4A4002FB966 /* Main.storyboard */,
 				9C86AAB21DD4D583002FB966 /* VictoriaAlbert */,
-				9C86AAB11DD4D583002FB966 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +72,7 @@
 				9C86AAB01DD4D583002FB966 /* VictoriaAlbert.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		9C86AAB21DD4D583002FB966 /* VictoriaAlbert */ = {
@@ -65,9 +82,9 @@
 				9C86AACC1DD4DCE7002FB966 /* Model */,
 				9C86AACD1DD4DCED002FB966 /* API */,
 				9C86AAC71DD4D5B1002FB966 /* ViewControllers */,
-				9C86AABA1DD4D583002FB966 /* Assets.xcassets */,
-				9C86AABC1DD4D583002FB966 /* LaunchScreen.storyboard */,
-				9C86AABF1DD4D583002FB966 /* Info.plist */,
+				9C619DE51DF7C29100E98EEB /* StoryBoard */,
+				9C619DE61DF7C29A00E98EEB /* Helper */,
+				9C86AAB11DD4D583002FB966 /* Products */,
 			);
 			path = VictoriaAlbert;
 			sourceTree = "<group>";
@@ -195,7 +212,6 @@
 				9C86AAD11DD4F4A4002FB966 /* Base */,
 			);
 			name = Main.storyboard;
-			path = VictoriaAlbert;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
