@@ -22,8 +22,8 @@ class VictoriaAlbertTableViewController: UITableViewController, UISearchBarDeleg
             guard let validObjects = Object.getCollectionObject(from: validData) else {return}
             self.objectsArray = validObjects
             
-            //            dump(validData)
-            //            dump(self.objectsArray)
+            dump(validData)
+            dump(self.objectsArray)
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
