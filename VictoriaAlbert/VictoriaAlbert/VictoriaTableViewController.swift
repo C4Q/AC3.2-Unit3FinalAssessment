@@ -41,20 +41,15 @@ class VictoriaTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return victoriaObjects.count
     }
-
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
-
         let museumObject = victoriaObjects[indexPath.row]
-        
-        cell.textLabel?.text = museumObject.name
-        
+        cell.textLabel?.text = ("\(museumObject.name), \(museumObject.dateText), \(museumObject.place)")
+        cell.detailTextLabel?.text = museumObject.title
         return cell
     }
 

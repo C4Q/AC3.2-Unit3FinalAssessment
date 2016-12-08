@@ -20,27 +20,29 @@ internal struct VictoriaObject {
     let title: String?
 //    let imageUrl: String
 //    let thumbUrl: String
+//    let primaryImageId: String
+    
+   
     
     static func victoriaObjects(from data: Data) -> [VictoriaObject]? {
         var victoriaObjectsToReturn:[VictoriaObject]? = []
         
         do {
             let jsonData: Any = try JSONSerialization.jsonObject(with: data, options: [])
-            
+
             guard let response = jsonData as? [String: Any],
-                let records = response["records"] as? [String: Any],
-                let arrayOfDictionaries = records as? [[String: Any]],
-                let finalDictionary = arrayOfDictionaries[0] as? [String: Any],
-                let fieldsDictionary = finalDictionary["fields"] as? [String: Any]
+                let arrayOfDictionaries = response["records"] as? [[String: Any]]
                 else {
                     throw VictoriaObjectModelParseError.fieldsDictionary
             }
             print("@@@@Got fieldsDictionary@@@@")
             
-            for victoriaObjectResults in fieldsDictionary {
+            for victoriaObjectResults in arrayOfDictionaries {
+                guard let fieldsDictionary = victoriaObjectResults["fields"] as? [String: Any] else {throw VictoriaObjectModelParseError.fieldsDictionary}
+                
                 
                 guard let name = fieldsDictionary["object"] as? String
-                    else {
+                else {
                         throw VictoriaObjectModelParseError.name
                 }
                 guard let dateText = fieldsDictionary["date_text"] as? String
@@ -55,8 +57,8 @@ internal struct VictoriaObject {
                     else {
                         throw VictoriaObjectModelParseError.title
                 }
-            
-                let validVictoriaObject = VictoriaObject(name: name, dateText: dateText, place: place, title: title)
+                
+                let validVictoriaObject = VictoriaObject(name: name, dateText: dateText, place: place, title: title) //imageUrl: imageUrl, thumbUrl: thumbUrl, primaryImageId: primaryImageId )
                 
                 victoriaObjectsToReturn?.append(validVictoriaObject)
             

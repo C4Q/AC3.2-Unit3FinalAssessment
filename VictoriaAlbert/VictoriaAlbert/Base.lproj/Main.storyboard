@@ -3,10 +3,11 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Victoria & Albert Museum-->
         <scene sceneID="G8r-2K-OhK">
             <objects>
                 <tableViewController id="iCD-jN-ne9" customClass="VictoriaTableViewController" customModule="VictoriaAlbert" customModuleProvider="target" sceneMemberID="viewController">
@@ -15,12 +16,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VictoriaCell" id="XAS-cZ-F7W">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VictoriaCell" textLabel="V74-1q-dRP" detailTextLabel="Yiy-I9-KD6" style="IBUITableViewCellStyleSubtitle" id="XAS-cZ-F7W">
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XAS-cZ-F7W" id="GxE-Q7-m1q">
                                     <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="V74-1q-dRP">
+                                            <frame key="frameInset" minX="15" minY="4" width="33" height="19"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Yiy-I9-KD6">
+                                            <frame key="frameInset" minX="15" minY="23" width="49" height="16"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="UhN-3W-6gL" kind="show" id="LAK-At-cwZ"/>
@@ -32,7 +49,7 @@
                             <outlet property="delegate" destination="iCD-jN-ne9" id="ZUY-6M-gVu"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Vnp-So-1Ce"/>
+                    <navigationItem key="navigationItem" title="Victoria &amp; Albert Museum" id="Vnp-So-1Ce"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fw9-yD-Hkn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -41,7 +58,8 @@
         <!--View Controller-->
         <scene sceneID="nbu-vK-Q5A">
             <objects>
-                <viewController id="UhN-3W-6gL" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CXJ-2E-IPS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="UhN-3W-6gL" customClass="ViewController" customModule="VictoriaAlbert" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QS3-W4-weF"/>
                         <viewControllerLayoutGuide type="bottom" id="l2i-vq-bJc"/>
@@ -49,12 +67,25 @@
                     <view key="view" contentMode="scaleToFill" id="LxP-nn-CKH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Kx-TT-ZlV">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="9M8-dO-5Yp"/>
+                                    <constraint firstAttribute="height" constant="575" id="Zif-ft-llM"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4Kx-TT-ZlV" firstAttribute="trailing" secondItem="LxP-nn-CKH" secondAttribute="trailingMargin" id="ElR-Pv-Crv"/>
+                            <constraint firstItem="4Kx-TT-ZlV" firstAttribute="leading" secondItem="LxP-nn-CKH" secondAttribute="leadingMargin" id="MTc-FK-Ufv"/>
+                            <constraint firstItem="4Kx-TT-ZlV" firstAttribute="top" secondItem="QS3-W4-weF" secondAttribute="bottom" constant="8" id="Mfb-p4-v4y"/>
+                            <constraint firstItem="l2i-vq-bJc" firstAttribute="top" secondItem="4Kx-TT-ZlV" secondAttribute="bottom" constant="20" id="umb-bT-bj6"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CXJ-2E-IPS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="880" y="110"/>
+            <point key="canvasLocation" x="879.20000000000005" y="109.29535232383809"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DOp-cU-sST">
