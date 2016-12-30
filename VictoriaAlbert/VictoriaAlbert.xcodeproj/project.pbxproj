@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3A6F2171DD4D3E100F910F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A6F2161DD4D3E100F910F4 /* AppDelegate.swift */; };
+		D3A6F21C1DD4D3E100F910F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3A6F21A1DD4D3E100F910F4 /* Main.storyboard */; };
+		D3A6F21E1DD4D3E100F910F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3A6F21D1DD4D3E100F910F4 /* Assets.xcassets */; };
+		D3A6F2211DD4D3E100F910F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3A6F21F1DD4D3E100F910F4 /* LaunchScreen.storyboard */; };
+		D3A6F22C1DD4D4F000F910F4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A6F22B1DD4D4F000F910F4 /* TableViewController.swift */; };
+		D3A6F22E1DD4D52700F910F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A6F22D1DD4D52700F910F4 /* ViewController.swift */; };
+		D3A6F2301DD4D5FA00F910F4 /* BricABrac.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A6F22F1DD4D5FA00F910F4 /* BricABrac.swift */; };
+		D3A6F2321DD4D82100F910F4 /* Pic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A6F2311DD4D82100F910F4 /* Pic.swift */; };
+		D3A6F2341DD4DC0D00F910F4 /* generalParsingCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A6F2331DD4DC0D00F910F4 /* generalParsingCode.swift */; };
+		D3A6F2391DD50D1800F910F4 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A6F2381DD50D1800F910F4 /* APIHelper.swift */; };
+		D3AA128C1DDF6CBF00924623 /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AA128B1DDF6CBF00924623 /* APIRequestManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D3A6F2131DD4D3E000F910F4 /* VictoriaAlbert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VictoriaAlbert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3A6F2161DD4D3E100F910F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3A6F21B1DD4D3E100F910F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D3A6F21D1DD4D3E100F910F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = VictoriaAlbert/Assets.xcassets; sourceTree = "<group>"; };
+		D3A6F2201DD4D3E100F910F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D3A6F2221DD4D3E100F910F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3A6F22B1DD4D4F000F910F4 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		D3A6F22D1DD4D52700F910F4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D3A6F22F1DD4D5FA00F910F4 /* BricABrac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BricABrac.swift; sourceTree = "<group>"; };
+		D3A6F2311DD4D82100F910F4 /* Pic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pic.swift; sourceTree = "<group>"; };
+		D3A6F2331DD4DC0D00F910F4 /* generalParsingCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = generalParsingCode.swift; sourceTree = "<group>"; };
+		D3A6F2381DD50D1800F910F4 /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIHelper.swift; path = ../APIHelper.swift; sourceTree = "<group>"; };
+		D3AA128B1DDF6CBF00924623 /* APIRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3A6F2101DD4D3E000F910F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3A6F20A1DD4D3E000F910F4 = {
+			isa = PBXGroup;
+			children = (
+				D3A6F2151DD4D3E000F910F4 /* VictoriaAlbert */,
+				D3A6F2141DD4D3E000F910F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3A6F2141DD4D3E000F910F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3A6F2131DD4D3E000F910F4 /* VictoriaAlbert.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3A6F2151DD4D3E000F910F4 /* VictoriaAlbert */ = {
+			isa = PBXGroup;
+			children = (
+				D3A6F2161DD4D3E100F910F4 /* AppDelegate.swift */,
+				D3A6F2221DD4D3E100F910F4 /* Info.plist */,
+				D3A6F2351DD4FC1E00F910F4 /* Networking */,
+				D3A6F22A1DD4D43000F910F4 /* Model */,
+				D3A6F2291DD4D40500F910F4 /* View */,
+				D3A6F2281DD4D3ED00F910F4 /* Controller */,
+			);
+			path = VictoriaAlbert;
+			sourceTree = "<group>";
+		};
+		D3A6F2281DD4D3ED00F910F4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D3A6F22B1DD4D4F000F910F4 /* TableViewController.swift */,
+				D3A6F22D1DD4D52700F910F4 /* ViewController.swift */,
+			);
+			name = Controller;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D3A6F2291DD4D40500F910F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D3A6F21A1DD4D3E100F910F4 /* Main.storyboard */,
+				D3A6F21D1DD4D3E100F910F4 /* Assets.xcassets */,
+				D3A6F21F1DD4D3E100F910F4 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D3A6F22A1DD4D43000F910F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D3A6F22F1DD4D5FA00F910F4 /* BricABrac.swift */,
+				D3A6F2311DD4D82100F910F4 /* Pic.swift */,
+				D3A6F2331DD4DC0D00F910F4 /* generalParsingCode.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D3A6F2351DD4FC1E00F910F4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D3A6F2381DD50D1800F910F4 /* APIHelper.swift */,
+				D3AA128B1DDF6CBF00924623 /* APIRequestManager.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3A6F2121DD4D3E000F910F4 /* VictoriaAlbert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3A6F2251DD4D3E100F910F4 /* Build configuration list for PBXNativeTarget "VictoriaAlbert" */;
+			buildPhases = (
+				D3A6F20F1DD4D3E000F910F4 /* Sources */,
+				D3A6F2101DD4D3E000F910F4 /* Frameworks */,
+				D3A6F2111DD4D3E000F910F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VictoriaAlbert;
+			productName = VictoriaAlbert;
+			productReference = D3A6F2131DD4D3E000F910F4 /* VictoriaAlbert.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3A6F20B1DD4D3E000F910F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Marty Hernandez Avedon";
+				TargetAttributes = {
+					D3A6F2121DD4D3E000F910F4 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D3A6F20E1DD4D3E000F910F4 /* Build configuration list for PBXProject "VictoriaAlbert" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3A6F20A1DD4D3E000F910F4;
+			productRefGroup = D3A6F2141DD4D3E000F910F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3A6F2121DD4D3E000F910F4 /* VictoriaAlbert */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3A6F2111DD4D3E000F910F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3A6F2211DD4D3E100F910F4 /* LaunchScreen.storyboard in Resources */,
+				D3A6F21E1DD4D3E100F910F4 /* Assets.xcassets in Resources */,
+				D3A6F21C1DD4D3E100F910F4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3A6F20F1DD4D3E000F910F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3AA128C1DDF6CBF00924623 /* APIRequestManager.swift in Sources */,
+				D3A6F2391DD50D1800F910F4 /* APIHelper.swift in Sources */,
+				D3A6F2341DD4DC0D00F910F4 /* generalParsingCode.swift in Sources */,
+				D3A6F2321DD4D82100F910F4 /* Pic.swift in Sources */,
+				D3A6F22E1DD4D52700F910F4 /* ViewController.swift in Sources */,
+				D3A6F2171DD4D3E100F910F4 /* AppDelegate.swift in Sources */,
+				D3A6F22C1DD4D4F000F910F4 /* TableViewController.swift in Sources */,
+				D3A6F2301DD4D5FA00F910F4 /* BricABrac.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D3A6F21A1DD4D3E100F910F4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3A6F21B1DD4D3E100F910F4 /* Base */,
+			);
+			name = Main.storyboard;
+			path = VictoriaAlbert;
+			sourceTree = "<group>";
+		};
+		D3A6F21F1DD4D3E100F910F4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3A6F2201DD4D3E100F910F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = VictoriaAlbert;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3A6F2231DD4D3E100F910F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3A6F2241DD4D3E100F910F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3A6F2261DD4D3E100F910F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VictoriaAlbert/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nyc.c4q.martyav.VictoriaAlbert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D3A6F2271DD4D3E100F910F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VictoriaAlbert/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nyc.c4q.martyav.VictoriaAlbert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3A6F20E1DD4D3E000F910F4 /* Build configuration list for PBXProject "VictoriaAlbert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3A6F2231DD4D3E100F910F4 /* Debug */,
+				D3A6F2241DD4D3E100F910F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3A6F2251DD4D3E100F910F4 /* Build configuration list for PBXNativeTarget "VictoriaAlbert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3A6F2261DD4D3E100F910F4 /* Debug */,
+				D3A6F2271DD4D3E100F910F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3A6F20B1DD4D3E000F910F4 /* Project object */;
+}
